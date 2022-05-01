@@ -1,0 +1,16 @@
+{
+    "selectedItems": "Itens selecionados",
+    "totalValue": "Valor total",
+    "searchProduct": "Procure por um produto",
+    "apple": "Maçã",
+    "pineapple": "Abacaxi",
+    "banana": "Banana",
+    "mango": "Manga",
+    "pear": "Pêra",
+    "select": "Selecionar",
+    "selected": "Selecionado!",
+    "addItemsToBag": "Adicione itens à sacola.",
+    "itemsNotFound": "Não foi encontrado nenhum produto 😦",
+    "checkoutFailed": "Erro ao realizar checkout.",
+    "checkoutSuccess": "Checkout realizado com sucesso."
+}
