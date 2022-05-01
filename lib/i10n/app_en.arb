@@ -12,5 +12,6 @@
     "addItemsToBag": "Add items to bag.",
     "itemsNotFound": "No products found 😦",
     "checkoutFailed": "Error when performing checkout.",
-    "checkoutSuccess": "Checkout successful."
+    "checkoutSuccess": "Checkout successful.",
+    "googleLogin": "Sign in with Google"
 }

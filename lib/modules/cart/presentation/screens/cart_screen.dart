@@ -104,6 +104,7 @@ class _CartScreenState extends State<CartScreen> {
                       ),
                       onPressed: () {
                         checkoutCubit.saveCheckoutAsPdf(cartCubit.state.items);
+                        cartCubit.resetCart();
                       },
                       child: BlocConsumer<CheckoutCubit, CheckoutCubitState>(
                           listener: (context, state) {
@@ -116,6 +117,8 @@ class _CartScreenState extends State<CartScreen> {
                             }
 
                             if (state is CheckoutSuccessState) {
+                              Navigator.of(context).pop();
+
                               CustomSnackBar(
                                 title: AppLocalizations.of(context)!
                                     .checkoutSuccess,

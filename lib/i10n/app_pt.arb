@@ -12,5 +12,6 @@
     "addItemsToBag": "Adicione itens à sacola.",
     "itemsNotFound": "Não foi encontrado nenhum produto 😦",
     "checkoutFailed": "Erro ao realizar checkout.",
-    "checkoutSuccess": "Checkout realizado com sucesso."
+    "checkoutSuccess": "Checkout realizado com sucesso.",
+    "googleLogin": "Login com o Google"
 }

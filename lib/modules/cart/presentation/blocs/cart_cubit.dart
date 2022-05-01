@@ -15,6 +15,10 @@ class CartCubit extends Cubit<CartCubitState> {
     emit(CartCubitState(items: map));
   }
 
+  void resetCart() {
+    emit(CartCubitState.empty());
+  }
+
   void updateItem(ItemModel item, int quantity) {
     if (quantity == 0) {
       return emit(

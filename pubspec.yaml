@@ -29,14 +29,19 @@ environment:
 dependencies:
   badges: ^2.0.2
   bloc: ^8.0.3
+  bloc_test: ^9.0.3
   cupertino_icons: ^1.0.2
   equatable: ^2.0.3
+  firebase_auth: ^3.3.16
+  firebase_core: ^1.15.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
+  google_sign_in: ^5.3.0
   intl: ^0.17.0
+  mocktail: ^0.3.0
   path_provider: ^2.0.9
   pdf: ^3.7.4
 

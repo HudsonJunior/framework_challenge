@@ -1,10 +1,9 @@
-import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:framework_test/core/models/item_model.dart';
 import 'package:framework_test/modules/cart/presentation/blocs/cart_cubit.dart';
-import 'package:framework_test/modules/cart/presentation/screens/cart_screen.dart';
 import 'package:framework_test/modules/home/presentation/blocs/item_bloc.dart';
+import 'package:framework_test/modules/home/presentation/widgets/cart_fab.dart';
 import 'package:framework_test/modules/home/presentation/widgets/item_widget.dart';
 import 'package:framework_test/modules/home/presentation/widgets/search_field.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -127,45 +126,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      floatingActionButton: SizedBox(
-        height: 60,
-        width: 60,
-        child: FloatingActionButton(
-          backgroundColor: Colors.purple,
-          onPressed: () {
-            if (selectedItems.isEmpty) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    AppLocalizations.of(context)!.addItemsToBag,
-                    style: const TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
-                  backgroundColor: Colors.purple,
-                ),
-              );
-              return;
-            }
-            cartCubit.setCartItems(selectedItems);
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => const CartScreen(),
-              ),
-            );
-          },
-          child: Badge(
-            badgeColor: Colors.white,
-            elevation: 6,
-            badgeContent: Text(
-              '${selectedItems.length}',
-              style: const TextStyle(
-                color: Colors.purple,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            child: const Icon(Icons.shopping_cart_rounded),
-          ),
-        ),
+      floatingActionButton: CartFab(
+        selectedItems: selectedItems,
+        onPress: () => cartCubit.setCartItems(selectedItems),
       ),
     );
   }

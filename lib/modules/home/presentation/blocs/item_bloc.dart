@@ -12,12 +12,10 @@ class ItemCubit extends Cubit<ItemBlocState> {
 
   final ItemUsecase itemUsecase;
 
-  void getItems() async {
+  Future<void> getItems() async {
     emit(LoadingItemsState());
     final response = await itemUsecase.getItems();
 
-    // Just for UI loading
-    await Future.delayed(const Duration(seconds: 2));
     emit(LoadItemsSuccessState(items: response, filteredItems: response));
   }
 
