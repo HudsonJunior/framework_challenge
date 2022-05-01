@@ -21,7 +21,8 @@ class CartItemWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Card(
-        elevation: 4,
+        elevation: 6,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -38,10 +39,12 @@ class CartItemWidget extends StatelessWidget {
               Expanded(
                 child: Column(
                   children: [
-                    Text(item.item.name,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                        )),
+                    Text(
+                      item.item.name,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Text(
                       'Qtd: ${item.quantity.toString()}',
                       style: const TextStyle(
@@ -57,16 +60,24 @@ class CartItemWidget extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: onRemove,
-                      icon: const Icon(
-                        Icons.remove_circle_rounded,
-                        color: Colors.purple,
+                      icon: const Card(
+                        color: Colors.transparent,
+                        elevation: 8,
+                        child: Icon(
+                          Icons.remove_circle_rounded,
+                          color: Colors.purple,
+                        ),
                       ),
                     ),
                     IconButton(
                       onPressed: onAdd,
-                      icon: const Icon(
-                        Icons.add_circle_rounded,
-                        color: Colors.purple,
+                      icon: const Card(
+                        color: Colors.transparent,
+                        elevation: 8,
+                        child: Icon(
+                          Icons.add_circle_rounded,
+                          color: Colors.purple,
+                        ),
                       ),
                     )
                   ],

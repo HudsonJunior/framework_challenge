@@ -17,7 +17,7 @@ class _SearchFieldState extends State<SearchField> {
   InputBorder get border => OutlineInputBorder(
         borderRadius: BorderRadius.circular(18.0),
         borderSide: const BorderSide(
-          color: Color.fromARGB(255, 47, 14, 104),
+          color: Colors.purple,
           width: 2,
         ),
       );
@@ -31,7 +31,7 @@ class _SearchFieldState extends State<SearchField> {
           enabledBorder: border,
           hintText: AppLocalizations.of(context)!.searchProduct,
           hintStyle: const TextStyle(
-            color: Color.fromARGB(255, 47, 14, 104),
+            color: Colors.purple,
             fontWeight: FontWeight.bold,
           ),
           border: border,

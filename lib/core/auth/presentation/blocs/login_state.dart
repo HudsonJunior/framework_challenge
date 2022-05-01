@@ -6,6 +6,12 @@ class LoginIdleState extends LoginState {}
 
 class LoginLoadingState extends LoginState {}
 
-class LoginSuccessState extends LoginState {}
+class LoginSuccessState extends LoginState {
+  GoogleSignInAccount user;
+
+  LoginSuccessState({
+    required this.user,
+  });
+}
 
 class LoginFailedState extends LoginState {}

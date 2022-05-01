@@ -14,6 +14,12 @@ class LoginBloc extends Cubit<LoginState> {
 
     if (user == null) return emit(LoginFailedState());
 
-    emit(LoginSuccessState());
+    emit(LoginSuccessState(user: user));
+  }
+
+  void logout() async {
+    emit(LoginIdleState());
+
+    GoogleSignIn().signOut();
   }
 }

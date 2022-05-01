@@ -51,7 +51,7 @@ class ItemWidget extends StatelessWidget {
                       child: Text(
                         '${item.name} - R\$ ${item.price.toString().priceFormatted}',
                         style: const TextStyle(
-                          color: Color.fromARGB(255, 47, 14, 104),
+                          color: Colors.purple,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

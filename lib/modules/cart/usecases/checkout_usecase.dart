@@ -20,7 +20,8 @@ class CheckoutUseCase {
                 children: items.values
                     .map(
                       (elem) => pw.Text(
-                          '${elem.item.name} - Qtd: ${elem.quantity} - R\$: ${elem.item.price}'),
+                        '${elem.item.name} - Qtd: ${elem.quantity} - R\$: ${elem.item.price}',
+                      ),
                     )
                     .toList(),
               ),
@@ -29,11 +30,12 @@ class CheckoutUseCase {
         ),
       );
 
-      final output = await getApplicationDocumentsDirectory();
-      final file = File('${output.path}/checkout.pdf');
+      final output = await getTemporaryDirectory();
+      final file =
+          File('${output.path}/checkout.pdf').openSync(mode: FileMode.write);
 
-      await file.writeAsBytes(await pdf.save());
-
+      file.writeFromSync((await pdf.save()).toList());
+      file.close();
       return true;
     } on Exception {
       return false;
