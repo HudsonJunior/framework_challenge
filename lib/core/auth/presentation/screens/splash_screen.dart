@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return BlocListener<SplashBloc, SplashState>(
       listener: (_, state) {
         if (state is SplashAppInitialized) {
-          Navigator.of(context).push(
+          Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (_) => const LoginScreen()),
           );
         }
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
           tag: 'splash_image',
           child: Image.asset(
             'assets/framework.jpg',
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
             height: double.infinity,
           ),
         ),
