@@ -14,6 +14,7 @@ Aplicativo construído como desafio técnico da Framework.
   - Carrinho de compras com os itens que o usuário selecionou
   - É possível adicionar e remover itens do carrinho.
   - Botão de checkout, gera um PDF contendo o "comprovante" do pedido.
+  - Tela de conta do usuário com opção de logout.
   - Internacionalização da aplicação em Inglês e Português.
   - Testes unitários para algumas classes
   
@@ -28,3 +29,5 @@ Aplicativo construído como desafio técnico da Framework.
 - A criação da interface buscou-se utilizar de componentes avançados e que tornam a aplicação Flutter mais bonita, como por exemplo:
   - Slivers;
   - Hero;
+
+- Prints das interfaces desenvolvidas:
