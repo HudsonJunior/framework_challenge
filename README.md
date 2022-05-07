@@ -32,6 +32,7 @@ Aplicativo construído como desafio técnico da Framework.
 
 - Prints das interfaces desenvolvidas:
 ![1651892614786](https://user-images.githubusercontent.com/37631682/167235619-38328cbd-e1ce-4411-a03f-d7fb2f838d8d.jpg)
+![1651892614759](https://user-images.githubusercontent.com/37631682/167235673-79fea3a4-5b21-4978-9cd2-ac83c6dbb022.jpg)
 ![1651892662973](https://user-images.githubusercontent.com/37631682/167235628-bf907afb-e97e-40b8-bcae-b0be1d1f7667.jpg)
 ![1651892614746 (1)](https://user-images.githubusercontent.com/37631682/167235634-18773a0d-4937-46e9-b15a-a02eed6524ff.jpg)
 
