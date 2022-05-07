@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:framework_test/core/auth/presentation/blocs/login_bloc.dart';
-import 'package:framework_test/core/auth/presentation/screens/login_screen.dart';
+import 'package:framework_test/core/submodules/auth/presentation/blocs/login_bloc.dart';
+import 'package:framework_test/core/submodules/auth/presentation/screens/login_screen.dart';
 
 class AccountScreen extends StatefulWidget {
   const AccountScreen({Key? key}) : super(key: key);

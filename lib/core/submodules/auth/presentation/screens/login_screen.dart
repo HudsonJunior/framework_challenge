@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:framework_test/core/auth/presentation/blocs/login_bloc.dart';
-import 'package:framework_test/core/auth/presentation/widgets/google_button.dart';
+import 'package:framework_test/core/submodules/auth/presentation/blocs/login_bloc.dart';
+import 'package:framework_test/core/submodules/auth/presentation/widgets/google_button.dart';
 import 'package:framework_test/modules/home/presentation/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {

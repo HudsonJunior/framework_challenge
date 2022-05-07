@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:framework_test/core/models/item_model.dart';
+import 'package:framework_test/core/common/models/item_model.dart';
 import 'package:framework_test/modules/home/domain/usecases/item_usecase.dart';
 import 'package:framework_test/modules/home/presentation/blocs/item_bloc.dart';
 import 'package:mocktail/mocktail.dart';

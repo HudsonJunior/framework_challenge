@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:framework_test/core/auth/presentation/blocs/login_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:framework_test/core/submodules/auth/presentation/blocs/login_bloc.dart';
 
 class GoogleSignInButton extends StatelessWidget {
   const GoogleSignInButton({

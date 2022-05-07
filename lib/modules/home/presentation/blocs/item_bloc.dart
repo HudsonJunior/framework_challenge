@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:framework_test/core/models/item_model.dart';
-
+import 'package:framework_test/core/common/models/item_model.dart';
 import 'package:framework_test/modules/home/domain/usecases/item_usecase.dart';
 
 part 'item_bloc_state.dart';

@@ -1,7 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:framework_test/core/models/item_model.dart';
+import 'package:framework_test/core/common/models/item_model.dart';
 
 import 'package:framework_test/modules/cart/presentation/screens/cart_screen.dart';
 

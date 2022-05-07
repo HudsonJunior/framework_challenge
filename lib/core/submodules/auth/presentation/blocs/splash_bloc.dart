@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:framework_test/core/firebase/firebase.dart';
+import 'package:framework_test/core/submodules/firebase/firebase.dart';
 
 part 'splash_state.dart';
 

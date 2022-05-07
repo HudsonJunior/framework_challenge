@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:framework_test/core/models/item_model.dart';
+import 'package:framework_test/core/common/models/item_model.dart';
 import 'package:framework_test/modules/cart/presentation/blocs/cart_cubit.dart';
 import 'package:framework_test/modules/home/presentation/blocs/item_bloc.dart';
 import 'package:framework_test/modules/home/presentation/widgets/cart_fab.dart';

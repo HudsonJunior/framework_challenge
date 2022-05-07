@@ -1,13 +1,15 @@
-import 'dart:io';
-
+import 'package:framework_test/modules/cart/domain/interfaces/ipdf_manager.dart';
 import 'package:framework_test/modules/cart/presentation/blocs/cart_cubit_state.dart';
 import 'package:path_provider/path_provider.dart';
-
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'dart:io';
 
-class CheckoutUseCase {
-  Future<bool> saveCheckoutAsPdf(Map<String, CartItem> items) async {
+class PdfManager implements IPdfManager {
+  @override
+  Future<void> writePdf(Map<String, CartItem> items) async {
+    if (items.isEmpty) throw PdfErrorException();
+
     final pdf = pw.Document();
 
     try {
@@ -36,9 +38,10 @@ class CheckoutUseCase {
 
       file.writeFromSync((await pdf.save()).toList());
       file.close();
-      return true;
     } on Exception {
-      return false;
+      rethrow;
     }
   }
 }
+
+class PdfErrorException implements Exception {}

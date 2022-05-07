@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:framework_test/core/models/item_model.dart';
+import 'package:framework_test/core/common/models/item_model.dart';
 
 void main() {
   test('When converting from int should return the correct value', () {

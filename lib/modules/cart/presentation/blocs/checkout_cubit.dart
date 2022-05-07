@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:framework_test/modules/cart/domain/usecases/checkout_usecase.dart';
 import 'package:framework_test/modules/cart/presentation/blocs/cart_cubit_state.dart';
-
-import 'package:framework_test/modules/cart/usecases/checkout_usecase.dart';
 
 part 'checkout_cubit_state.dart';
 
