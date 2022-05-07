@@ -23,3 +23,8 @@ Aplicativo construído como desafio técnico da Framework.
     - Data -> Contém as classes de acessos a dados. Aqui estão localizados os datasources e os repositories.
     - Domain -> Contém a lógica de negócio (usecase) e as interfaces para os repositories (Princípio da inversão de depêndencia, assim, mantemos o `domain` totalmente independente das outras camadas.
     - Presentation -> Lógica de apresentação. Aqui está as telas, widgets e tudo mais.   
+
+- Para o gerenciamento de estado foi utilizado o BLoC. Aplicando-se da utilização correta e renderizando apenas partes da árvore necessária, otimizando a performance do app.
+- A criação da interface buscou-se utilizar de componentes avançados e que tornam a aplicação Flutter mais bonita, como por exemplo:
+  - Slivers;
+  - Hero;
